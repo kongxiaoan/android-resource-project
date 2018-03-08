@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kongpingan.android.framework.application.activity.ApplicationActivity">
+
+    <Button
+        android:id="@+id/view_life_cycle_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View 生命周期"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/view_drawview_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="展示自定义View"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>
