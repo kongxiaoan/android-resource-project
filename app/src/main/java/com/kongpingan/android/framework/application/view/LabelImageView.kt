@@ -50,6 +50,7 @@ class LabelImageView : AppCompatImageView {
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         calculatePath(measuredWidth, measuredHeight)
+
         canvas.drawPath(backgroundPath, backgroundPaint)
         canvas.drawTextOnPath("Hot", pathText, 100F, -20F, textPaint)
     }

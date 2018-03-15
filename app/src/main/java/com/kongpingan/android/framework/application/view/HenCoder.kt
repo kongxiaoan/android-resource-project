@@ -2,32 +2,29 @@ package com.kongpingan.android.framework.application.view
 
 import android.content.Context
 import android.graphics.Canvas
-import android.graphics.Color
 import android.graphics.Paint
-import android.support.v4.view.ViewPager
 import android.util.AttributeSet
 import android.view.View
+import com.orhanobut.logger.Logger
 
 /**
- * Created by mr.kong on 2018/3/8.
+ * Created by mr.kong on 2018/3/9.
  */
-class DrawView : View {
-    private lateinit var mPaint: Paint
+class HenCoder : View {
+    private var mPaint: Paint = Paint()
 
     constructor(context: Context?) : this(context, null)
     constructor(context: Context?, attrs: AttributeSet?) : this(context, attrs, 0)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-        init()
-
+        Logger.e("构造方法")
     }
-
-    private fun init() {
-        mPaint = Paint()
+    init {
+        Logger.e("init 初始化方法")
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        mPaint.color = Color.BLACK
-        canvas.drawCircle(150F,150F,150F,mPaint)
+        Logger.e("onDraw 方法")
+        canvas.drawCircle(300F, 300F, 200F, mPaint)
     }
 }
